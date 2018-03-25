@@ -1,0 +1,77 @@
+section.getintouch{
+  background: $color-blue;
+  height: 125px;
+  margin-top: 80px;
+  .container{
+    p{
+      float: left;
+      line-height: 125px;
+      color: white;
+      font-size: 24px;
+      text-transform: uppercase;
+      margin-left: 45px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .button{
+      float: right;
+      @include button(white);
+      background: $color-blue;
+      padding: 15px 40px;
+      margin: 30px 8px;
+    }
+  }
+}
+section.information{
+  background: $color-text;
+
+  .container{
+    display: flex;
+    justify-content: space-between;
+    .wrapper{
+      width: 24%;
+      text-align: left;
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+    h3{
+      color: $color-blue;
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+    p{
+      font-size: 14px;
+      color: white;
+      line-height: 1.4;
+    }
+    li{
+      font-size: 14px;
+      color: white;
+      line-height: 1.5;
+      &:before{
+        content: '\f054';
+        font-family: 'fontAwesome';
+        color: $color-blue;
+        margin-left: 10px;
+        margin-right: 9px;
+        font-size: 10px;
+
+      }
+    }
+    p{
+      width: 80%;
+    }
+    .fa{
+      color: $color-blue;
+      font-size: 14px;
+    }
+    .fa-map-marker{
+      margin-top: 25px;
+    }
+    a{
+      color: white;
+      font-size: 14px;
+    }
+  }
+}

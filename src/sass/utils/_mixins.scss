@@ -1,0 +1,48 @@
+@mixin text-regular{
+  font-size: 14px;
+  color: $color-text;
+}
+@mixin button($color){
+  display: inline-block;
+  line-height: 30px;
+  font-size: 14px;
+  border: 1px solid $color;
+  color: $color;
+  text-transform: uppercase;
+  padding: 0 10px;
+  cursor: pointer;
+  user-select: none;
+  margin-top: 10px;
+}
+@mixin name{
+  font-size: 24px;
+  text-transform: uppercase;
+  color: $color-blue;
+}
+@mixin title{
+  color: $color-blue;
+  font-size: 35px;
+  text-transform: uppercase;
+  position: relative;
+  text-align: left;
+  &:after{
+    position: absolute;
+    content: '';
+    display: inline-block;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 61px;
+    background: $color-blue;
+  }
+}
+@mixin nav-arrow{
+  background: $color-blue;
+  color: white;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  font-size: 10px;
+  line-height: 20px;
+  cursor: pointer;
+}

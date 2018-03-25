@@ -1,0 +1,163 @@
+section.main-image{
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/index/yacht.jpeg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  .left-arrow{
+    position: absolute;
+    top: 60%;
+    left: 20px;
+    cursor: pointer;
+  }
+  .right-arrow{
+    position: absolute;
+    top: 60%;
+    right: 20px;
+    cursor: pointer;
+  }
+  .arrow{
+    .fa{
+      border: 1px solid white;
+      color: #fff;
+      line-height: 60px;
+      width: 50px;
+      font-size: 30px;
+      @include tablet-portrait{
+        line-height: 40px;
+        width: 40px;
+        font-size: 20px;
+      }
+      @include tablet-mobile{
+        border: none;
+      }
+    }
+  }
+  .main-content{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    p{
+      @include text-regular;
+      color: white;
+      padding: 15px 50px;
+      width: 70%;
+      margin: auto;
+    }
+  }
+  h1{
+    font-size: 35px;
+    color: white;
+    text-transform: uppercase;
+    @include tablet-portrait{
+      font-size: 30px;
+    }
+  }
+  .button{
+    @include button(#fff)
+
+  }
+}
+section.features{
+  background: #f8f8f8;
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .part{
+    width: 25%;
+    margin: 50px 15px;
+    line-height: 2;
+    h2{
+      @include name;
+    }
+    p{
+      @include text-regular;
+    }
+    .fa{
+      font-size: 35px;
+      color: #4b4b4b;
+    }
+  }
+
+}
+section.recent-projects{
+  padding: 50px 0;
+  .container{
+    }
+    h2{
+      @include title;
+      padding-top: 40px;
+    }
+  }
+  .slide-container{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 30px;
+    .slide{
+      width: 30%;
+    }
+    img{
+      width: 100%;
+    }
+  }
+  nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    .fa{
+    @include nav-arrow;
+  }
+
+}
+section.testimonials{
+  background: $color-blue;
+  .container{
+    display: flex;
+  }
+  .wrapper{
+    width: 25%;
+  }
+  h3{
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-top: 35px;
+  }
+  .line{
+    height: 2px;
+    width: 33px;
+    background: #fff;
+    margin: 10px auto;
+  }
+  h4{
+    font-size: 26px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    @include tablet-mobile{
+      font-size: 16px;
+    }
+  }
+}
+section.blog-posts {
+  padding: 50px 0;
+  .container {
+    h2 {
+      @include title;
+    }
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    .fa {
+      @include nav-arrow;
+    }
+  }
+}
